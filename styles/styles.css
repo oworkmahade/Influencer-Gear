@@ -186,6 +186,38 @@ body {
   color: white;
 }
 
+.footer {
+  margin-top: 100px;
+  background-color: #0a0826;
+}
+
+.footer .container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+}
+.footer-title {
+  font-size: 1.5rem;
+  padding-top: 50px;
+}
+
+.footer-copyright,
+.footer-right-reserved {
+  margin-top: 10px;
+}
+
+.footer-social-icons {
+  width: 270px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
 /* media query */
 
 @media screen and (max-width: 576px) {
