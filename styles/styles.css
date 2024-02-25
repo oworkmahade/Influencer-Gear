@@ -1,0 +1,257 @@
+/* website fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* shared css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font family */
+body {
+  font-family: "Open Sans", sans-serif;
+  /* width: 80vw; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.button-primary {
+  background-color: #e02c6d;
+}
+
+.primary-margin {
+  margin-top: 100px;
+}
+
+/* header section */
+.header {
+  /* width: 80vw;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+/* navbar section */
+.navbar {
+  margin: 50px 100px 0px 100px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* banner styles */
+.banner {
+  margin: 100px 100px 0px 100px;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-title {
+  font-size: 3rem;
+  color: black;
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 1rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.banner-btn {
+  background-color: #e02c6d;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+}
+
+.banner-camera-background {
+  background-image: url(../images/Circledesign.svg);
+  width: 475px;
+  height: 475px;
+}
+
+.banner-camera img {
+  padding: 20px;
+  width: 100%;
+}
+
+/* partners styles */
+
+.partners {
+  margin-top: 100px;
+}
+.partners .container {
+  /* width: 60vw; */
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-top: 0.5px solid whitesmoke;
+  border-bottom: 0.5px solid whitesmoke;
+}
+
+/* popular collection */
+
+.popular-collection .box {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.09);
+}
+
+.popular-collection {
+  margin-top: 100px;
+}
+
+.collection-title {
+  text-align: center;
+  font-size: 2rem;
+}
+.popular-collection .container {
+  margin-top: 30px;
+  max-width: 1047px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.see-more {
+  max-width: 1047px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #e02c6d;
+}
+
+/* media query */
+
+@media screen and (max-width: 576px) {
+  /* navbar */
+  .navbar {
+    display: none;
+  }
+
+  .response-menu {
+    display: block;
+  }
+
+  .response-menu .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .responsive-nav-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  /* banner */
+  .banner {
+    margin: 0px;
+    margin-top: 20px !important;
+  }
+  .banner-camera {
+  }
+  .banner .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .banner-camera-background {
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+
+  .banner-content {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  /* partners  */
+  .partners {
+    margin-top: 0px;
+  }
+
+  .partners .container img {
+    width: 100%;
+  }
+  .partners .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 20px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  /* popular-collection */
+  .popular-collection {
+    margin-top: 0px;
+  }
+  .collection-title {
+    font-size: 1.5rem;
+  }
+  .popular-collection .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .popular-collection .container img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .response-menu {
+    display: none;
+  }
+}
