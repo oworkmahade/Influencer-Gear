@@ -171,6 +171,7 @@ body {
 .description {
   font-size: 0.8rem;
   margin-top: 5px;
+  font-weight: 600;
 }
 
 .see-more {
