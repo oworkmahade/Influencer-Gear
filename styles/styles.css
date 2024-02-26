@@ -372,6 +372,9 @@ body {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  .response-menu {
+    display: none;
+  }
   .header {
     width: 100%;
   }
@@ -419,6 +422,8 @@ body {
   }
   .featured-products .container {
     flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .featured-content {
@@ -426,6 +431,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .see-more {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 20px;
   }
 }
 
